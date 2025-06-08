@@ -3,13 +3,19 @@ export interface CardProps {
   content: string;
 }
 
-export interface UserProps{
-    id: string;
-    title: string;
-    content: string;
+export interface UserProps {
+  title: string;
+  content: string;
 }
 
 export interface PostModalProps {
-  isOpen: boolean;
+  onSubmit: (post: UserProps) => void;
   onClose: () => void;
 }
+
+export interface ButtonProps {
+  size: "small" | "medium" | "large";
+  shape: "rounded-sm" | "rounded-md" | "rounded-full";
+}
+
+
