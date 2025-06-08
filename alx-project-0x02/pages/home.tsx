@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Card from "@/components/common/Card";
+import Header from "@/components/layout/Header";
 import { UserProps } from "@/interfaces";
 import PostModal from "@/components/common/PostModal";
 
@@ -13,6 +14,7 @@ const Home = () => {
 
   return (
     <div>
+      <Header />
       <h1>Welcome</h1>
       <div className="flex items-end">
         <button>
