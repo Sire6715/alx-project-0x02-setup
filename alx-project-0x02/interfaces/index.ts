@@ -4,10 +4,18 @@ export interface CardProps {
 }
 
 export interface UserProps {
+  userID?: number;
   title: string;
   content: string;
 }
 
+export interface UserApiData extends UserProps {
+  name: string;
+  email: string;
+  address: {
+    street: string;
+  };
+}
 export interface PostModalProps {
   onSubmit: (post: UserProps) => void;
   onClose: () => void;
