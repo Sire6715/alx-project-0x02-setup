@@ -34,7 +34,7 @@ export async function getStaticProps() {
   const posts: PostProps[] = data.map((post: any) => ({
     userId: post.userId,
     title: post.title,
-    content: post.body, // map 'body' to 'content'
+    content: post.body,
   }));
 
   return {
